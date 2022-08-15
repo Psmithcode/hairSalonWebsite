@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --light: #FAF9F6;
+}
+html{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    /* align-items: center;
+    justify-content: center; */
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #5fb3bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navBar {
+    width: 78%;
+    height: 130px;
+    background-color: #5fb3bd;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#navTitle{
+    width: 270px;
+    height: 130px;
+    color: white;
+    background-color: #133545;
+    text-decoration: none;
+    line-height: 130px;
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    top: 20px;
+    margin-left: 150px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+#navButtons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    align-items: center;
+    margin-right: 110px;
+    list-style: none;
+}
+
+#navButtons > li{
+    width: auto;
+    height: 30px;
+}
+
+#navButtons > li > a { 
+    border-radius: 5px;
+    background-color: #133545;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleContainer{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+#gridContainer{
+    display: grid;
+    width: auto;
+    height: auto;
+    gap: 60px;
+    row-gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.imgContainer{
+    width: 100%;
+    height: 100%;
+    border: 5px solid #5fb3bd;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0px 33px 28px -10px rgba(0,0,0,0.5);
+}
+
+.imgContainer > img {
+    width: 100%;
+    height: 100%;
+}
+
+#showMore{
+    margin: 20px;
+}
+
+
+
+
+footer{
+    height: 170px;
+    width: 100%;
+    background-color: #519194;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
