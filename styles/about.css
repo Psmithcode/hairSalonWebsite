@@ -8,7 +8,7 @@
 
 html{
     width: 100%;
-    height: 80%;
+    height: auto;
     margin: 0;
 }
 
@@ -23,7 +23,9 @@ body{
     margin: 0;
 }
 
-
+main{
+    height: 800px;
+}
 
 header{
     width: 100%;
@@ -140,8 +142,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 }
 
 
@@ -157,7 +159,9 @@ footer{
      position: relative;
     }
  
- 
+    main{
+        margin-bottom: 100px;
+    }
  
     #navBar{
      width: 100%;
@@ -214,6 +218,9 @@ footer{
      #navButtons.active{
          left: 0;
      }
- 
- 
+     
+     #pMargin{
+        margin-bottom: 100px;
+     }
+    
  }
